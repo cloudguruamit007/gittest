@@ -1,9 +1,2 @@
 version: 2
-updates:
-  - package-ecosystem: "npm"        # or "pip", "maven", etc.
-    directory: "/"                  # location of package manifest
-    schedule:
-      interval: "weekly"            # daily/weekly/monthly
-    open-pull-requests-limit: 5
-    reviewers:
-      - cloudguruamit007
+updates: []
