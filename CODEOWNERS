@@ -1,0 +1,3 @@
+# Require reviews from specific owners
+/docs/ @cloudguruamit007
+/src/ @cloudguruamit007 @teammate
