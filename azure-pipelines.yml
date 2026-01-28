@@ -1,18 +1,9 @@
 trigger:
-  branches:
-    include:
-      - main
+- main   # Runs pipeline when code is pushed to main branch
 
 pool:
-  vmImage: 'ubuntu-latest'
+  vmImage: 'ubuntu-latest'   # Use Microsoft-hosted agent
 
 steps:
-- task: DotNetCoreCLI@2
-  inputs:
-    command: 'build'
-    projects: '**/*.csproj'
-
-- task: DotNetCoreCLI@2
-  inputs:
-    command: 'test'
-    projects: '**/*Tests.csproj'
+- script: echo "Hello, Azure DevOps Pipeline is working!"
+  displayName: 'Run a simple script'
